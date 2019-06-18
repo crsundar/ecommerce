@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
 def home(request):
-	return render(request, 'products/home.html', {})
+	context = {'title' : 'home'}
+	return render(request, 'products/home.html', context)
